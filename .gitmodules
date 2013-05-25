@@ -1,0 +1,18 @@
+[submodule "bundle/sensible-plugin"]
+	path = bundle/sensible-plugin
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "bundle/ctrlp-plugin"]
+	path = bundle/ctrlp-plugin
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/latex-suite-plugin"]
+	path = bundle/latex-suite-plugin
+	url = git@github.com:jmhammond/latex-suite-windows.git
+[submodule "bundle/commentary-plugin"]
+	path = bundle/commentary-plugin
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "bundle/pandoc-plugin"]
+	path = bundle/pandoc-plugin
+	url = https://github.com/vim-pandoc/vim-pandoc.git
+[submodule "bundle/scratch-plugin"]
+	path = bundle/scratch-plugin
+	url = https://github.com/vim-scripts/scratch.vim.git
