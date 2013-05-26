@@ -16,3 +16,6 @@
 [submodule "bundle/scratch-plugin"]
 	path = bundle/scratch-plugin
 	url = https://github.com/vim-scripts/scratch.vim.git
+[submodule "bundles/python-ftplugin"]
+	path = bundles/python-ftplugin
+	url = https://github.com/tarmack/vim-python-ftplugin.git

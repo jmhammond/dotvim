@@ -20,6 +20,7 @@ set spellfile+=~/vimfiles/spell/latexjargon.latin1.add
 """" TESTING """""""""
 """" Playing with these settings:
 
+set ignorecase
 
 let g:tex_indent_items = 1
 
@@ -31,9 +32,7 @@ let g:tex_itemize_env = 'itemize\|description\|enumerate\|thebibliography\|\\par
 map <F10> <leader>ll <leader>ll 
 
 " Trying commandt
-noremap <leader>t <Esc>:CommandT ~/Dropbox/Documents<CR>
 set wildignore+=*.o,*.obj,.git,*.pdf,*.dvi,*.aux
-let g:CommandTMatchWindowReverse=1 
 
 "" Medium Mode
 "autocmd VimEnter,BufNewFile,BufReadPost * silent! :MediumModeDisable
@@ -58,9 +57,17 @@ let g:ctrlp_clear_cache_on_exit = 0
 
 
 " CtrlP is a fuzzyish finder
-let g:ctrlp_working_path_mode = 'c'
+
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP C:\Users\john\Dropbox\Documents'
+
+" On windows I'm doing the TeXing.
+if has("gui_win32")
+	let g:ctrlp_working_path_mode = 'c'
+	let g:ctrlp_cmd = 'CtrlP C:\Users\john\Dropbox\Documents'
+else " Vs. version control'd python on Ubuntu. 
+	" I don't like this as my work linux box won't be correct...
+	let g:ctrlp_working_path_mode = 'ra'
+endif
 
 """""""""""""
 
