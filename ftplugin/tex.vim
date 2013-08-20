@@ -23,7 +23,12 @@ setlocal tabstop=4
 "let g:tex_flavor='latex'
 
 let g:Tex_DefaultTargetFormat='pdf'
-let g:Tex_ViewRule_pdf = 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe'
+
+if has("gui_win32")
+	let g:Tex_ViewRule_pdf = 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe'
+else 
+	let g:Tex_ViewRule_pdf = 'okular'
+endif
 "let g:Tex_CompileRule_pdf = 'pdflatex --synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_CompileRule_pdf = 'lualatex --synctex=1 -interaction=nonstopmode  $*'
 let g:Tex_IgnoredWarnings = 
