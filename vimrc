@@ -12,8 +12,13 @@ call pathogen#helptags()
 
 " Spelling with custom dictionary. Add using 2zg
 set spelllang=en_us
-set spellfile=~/vimfiles/spell/en.latin1.add
-set spellfile+=~/vimfiles/spell/latexjargon.latin1.add
+if has("gui_win32")
+	set spellfile=~/vimfiles/spell/en.latin1.add
+	set spellfile+=~/vimfiles/spell/latexjargon.latin1.add
+else 
+	set spellfile=~/.vim/spell/en.latin1.add
+	set spellfile+=~/.vim/spell/latexjargon.latin1.add
+endif
 
 
 
@@ -33,8 +38,7 @@ let g:tex_itemize_env = 'itemize\|description\|enumerate\|thebibliography\|parts
 " Double compile tex
 map <F10> <leader>ll <leader>ll 
 
-" Trying commandt
-set wildignore+=*.o,*.obj,.git,*.pdf,*.dvi,*.aux
+set wildignore+=*.o,*.obj,.git,*.pdf,*.dvi,*.aux,*.gz
 
 "" Medium Mode
 "autocmd VimEnter,BufNewFile,BufReadPost * silent! :MediumModeDisable
@@ -54,9 +58,6 @@ let g:ctrlp_clear_cache_on_exit = 0
 "
 """""" end testing options
 
-" Use the Windows shortcuts like C-c, C-v. I rather like this
-"source $VIMRUNTIME/mswin.vim
-
 
 " CtrlP is a fuzzyish finder
 
@@ -66,9 +67,9 @@ let g:ctrlp_map = '<c-p>'
 if has("gui_win32")
 	let g:ctrlp_working_path_mode = 'c'
 	let g:ctrlp_cmd = 'CtrlP C:\Users\john\Dropbox\Documents'
-else " Vs. version control'd python on Ubuntu. 
-	" I don't like this as my work linux box won't be correct...
-	let g:ctrlp_working_path_mode = 'ra'
+else 
+	let g:ctrlp_cmd = 'CtrlP ~/Dropbox/Documents'
+	let g:ctrlp_working_path_mode = 'c'
 endif
 
 """""""""""""
