@@ -23,9 +23,11 @@ set spellfile+=~/vimfiles/spell/latexjargon.latin1.add
 set ignorecase
 
 let g:tex_indent_items = 1
-
+set softtabstop=4 
+set shiftwidth=4 
+set expandtab
 let g:tex_items = '\\bibitem\|\\item\|\\part\|\\question'
-let g:tex_itemize_env = 'itemize\|description\|enumerate\|thebibliography\|\\parts\|\\questions'
+let g:tex_itemize_env = 'itemize\|description\|enumerate\|thebibliography\|parts\|questions'
 
 
 " Double compile tex
