@@ -16,3 +16,9 @@
 [submodule "bundles/python-ftplugin"]
 	path = bundles/python-ftplugin
 	url = https://github.com/tarmack/vim-python-ftplugin.git
+[submodule "bundle\\vim_colorscheme"]
+	path = bundle\\vim_colorscheme
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "bundle\\vim-airline"]
+	path = bundle\\vim-airline
+	url = https://github.com/bling/vim-airline.git
