@@ -1,13 +1,12 @@
 " TODO
 " latex suite is overriding my f1 settings
-" opening the file texrc (in latex suite) automatically modifies this file. Why?
-    " -- the reason was it declares at the top, ff=unix, but on disk it's dos.
 " Some settings need to be moved to the tex ftplugin 
 " My changes need to be pushed to git
 
-syntax on
+syntax enable
 """ required. this makes vim invoke latex-suite when you open a tex file.
-filetype plugin indent on
+filetype plugin on
+filetype indent on
 
 set nocompatible
 
@@ -29,11 +28,24 @@ endif
 
 
 " Testing settings
+set showmatch " Show matching bracket when selected
+set lazyredraw " Don't redraw when macros execute
+set history=500 
 set autoindent
 
+" Put bufferline in the statusline 
+let g:bufferline_echo = 0
+  autocmd VimEnter *
+    \ let &statusline='%{bufferline#refresh_status()}'
+      \ .bufferline#get_status_string()
+
+" My LaTeX documents all have tons of trailing whitespace, and I don't care.
+" ... ask airline to not tell me about it.
+let g:airline#extensions#whitespace#enabled = 0
+
 " Treat long lines as normal lines
-map j gj 
-map k gk  
+"map j gj 
+"map k gk  
 
 " Taken from sensible: "
 set smarttab
@@ -108,7 +120,9 @@ autocmd FileType tex set commentstring=\%\ %s
 
 
 """"""  GUI settings.
-colorscheme murphy 
+set background=dark
+colorscheme solarized 
+let g:airline_theme='solarized'
 
 if has("gui_running")
     if has("gui_gtk2") 

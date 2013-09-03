@@ -22,3 +22,12 @@
 [submodule "bundle\\vim-airline"]
 	path = bundle\\vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule "bundle\\vim-bufferline"]
+	path = bundle\\vim-bufferline
+	url = https://github.com/bling/vim-bufferline.git
+[submodule "bundle\\vim-colors-solarized"]
+	path = bundle\\vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle\\vim-matchit"]
+	path = bundle\\vim-matchit
+	url = https://github.com/tsaleh/vim-matchit.git
