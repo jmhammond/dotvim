@@ -33,6 +33,10 @@ set lazyredraw " Don't redraw when macros execute
 set history=500 
 set autoindent
 
+" Prevent latex-suite from messing up indenting when using
+" the mixed-interval notation (blah, blah]
+let g:tex_indent_brace = 0
+
 " Put bufferline in the statusline 
 let g:bufferline_echo = 0
   autocmd VimEnter *
@@ -120,7 +124,7 @@ autocmd FileType tex set commentstring=\%\ %s
 
 
 """"""  GUI settings.
-set background=dark
+set background=light
 colorscheme solarized 
 let g:airline_theme='solarized'
 

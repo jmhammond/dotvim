@@ -56,6 +56,7 @@ let g:Tex_Env_problem = "\\begin{problem}{0}\<CR><++>\<CR>\\end{problem}<++>"
 let g:Tex_Env_questions = "\\begin{questions}\<CR>\\question[0] <++>\<CR>\\end{questions}<++>"
 let g:Tex_Env_parts = "\\begin{parts}\<CR>\\part <++>\<CR>\\end{parts}<++>"
 let g:Tex_Env_solutionorlines = "\\begin{solutionorlines}[.75in]\<CR><++>\<CR>\\end{solutionorlines}<++>"
+let g:Tex_Env_solution = "\\begin{solution}[1pt]\<CR><++>\<CR>\\end{solution}<++>"
 
 """" end latex
 
