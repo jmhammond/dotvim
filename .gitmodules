@@ -16,18 +16,18 @@
 [submodule "bundles/python-ftplugin"]
 	path = bundles/python-ftplugin
 	url = https://github.com/tarmack/vim-python-ftplugin.git
-[submodule "bundle\\vim_colorscheme"]
-	path = bundle\\vim_colorscheme
+[submodule "bundle/vim_colorscheme"]
+	path = bundle/vim_colorscheme
 	url = https://github.com/flazz/vim-colorschemes.git
-[submodule "bundle\\vim-airline"]
-	path = bundle\\vim-airline
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "bundle\\vim-bufferline"]
-	path = bundle\\vim-bufferline
+[submodule "bundle/vim-bufferline"]
+	path = bundle/vim-bufferline
 	url = https://github.com/bling/vim-bufferline.git
-[submodule "bundle\\vim-colors-solarized"]
-	path = bundle\\vim-colors-solarized
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle\\vim-matchit"]
-	path = bundle\\vim-matchit
+[submodule "bundle/vim-matchit"]
+	path = bundle/vim-matchit
 	url = https://github.com/tsaleh/vim-matchit.git
