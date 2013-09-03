@@ -1,33 +1,44 @@
 [submodule "bundle/ctrlp-plugin"]
 	path = bundle/ctrlp-plugin
 	url = https://github.com/kien/ctrlp.vim.git
+        ignore=dirty
 [submodule "bundle/latex-suite-plugin"]
 	path = bundle/latex-suite-plugin
 	url = git@github.com:jmhammond/latex-suite-windows.git
+        ignore=dirty
 [submodule "bundle/commentary-plugin"]
 	path = bundle/commentary-plugin
 	url = https://github.com/tpope/vim-commentary.git
+        ignore=dirty
 [submodule "bundle/pandoc-plugin"]
 	path = bundle/pandoc-plugin
 	url = https://github.com/vim-pandoc/vim-pandoc.git
+        ignore=dirty
 [submodule "bundle/scratch-plugin"]
 	path = bundle/scratch-plugin
 	url = https://github.com/vim-scripts/scratch.vim.git
+        ignore=dirty
 [submodule "bundles/python-ftplugin"]
 	path = bundles/python-ftplugin
 	url = https://github.com/tarmack/vim-python-ftplugin.git
+        ignore=dirty
 [submodule "bundle/vim_colorscheme"]
 	path = bundle/vim_colorscheme
 	url = https://github.com/flazz/vim-colorschemes.git
+        ignore=dirty
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+        ignore=dirty
 [submodule "bundle/vim-bufferline"]
 	path = bundle/vim-bufferline
 	url = https://github.com/bling/vim-bufferline.git
+        ignore=dirty
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+        ignore=dirty
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
 	url = https://github.com/tsaleh/vim-matchit.git
+        ignore=dirty
