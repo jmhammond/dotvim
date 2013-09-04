@@ -48,7 +48,7 @@ let g:Tex_GotoError = 0 " <-- Makes \ll go to first error
 
 " Testing settings: 
 let g:Tex_UsePython = 1  " Use Python rather than VimScript for speed
-let g:Tex_PromptedEnvironments = 'eqnarray*,tabular,parts,center,\[,$$,align*,oneparchoices,solutionorlines'
+let g:Tex_PromptedEnvironments = 'eqnarray*,tabular,parts,center,\[,$$,align*,solution,solutionorlines,oneparchoices'
 
 "
 "" Custom LaTeX Environments
