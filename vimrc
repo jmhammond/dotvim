@@ -35,7 +35,25 @@ set autoindent
 
 " Prevent latex-suite from messing up indenting when using
 " the mixed-interval notation (blah, blah]
+"  -- a bettter solution is to fix the indent/tex.vim
 let g:tex_indent_brace = 0
+
+" Return to last edit position when opening files
+" This is nice... but I could always just `" if I remember
+" ... also read more of Drew Neil's book...
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+" Remember info about open buffers on close
+"set viminfo^=% " TODO < this seems neat. Any reason not to?
+" Reason: I open like a dozen tex files. I don't care about them.
+
+" Get rid of the solarized menu
+let g:solarized_menu=0
+" And maybe get rid of all the menus entirely (if happy, move to bottom of
+" .vimrc
+set guioptions-=m
 
 " Put bufferline in the statusline 
 let g:bufferline_echo = 0
