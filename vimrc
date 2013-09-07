@@ -55,19 +55,19 @@ let g:solarized_menu=0
 " .vimrc
 set guioptions-=m
 
-" Put bufferline in the statusline 
-let g:bufferline_echo = 0
-  autocmd VimEnter *
-    \ let &statusline='%{bufferline#refresh_status()}'
-      \ .bufferline#get_status_string()
-
 " My LaTeX documents all have tons of trailing whitespace, and I don't care.
 " ... ask airline to not tell me about it.
 let g:airline#extensions#whitespace#enabled = 0
+let g:airline_enable_branch = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#bufferline#enabled = 1
+let g:airline_section_b = 'your mom.'
 
-" Treat long lines as normal lines
-"map j gj 
-"map k gk  
+function Override(...)
+    call a:1.add_section('StatusLine', '%{airline#extensions#branch#get_head()}')
+    return 1
+endfunction
+call airline#add_statusline_func('Override')
 
 " Taken from sensible: "
 set smarttab
@@ -127,8 +127,11 @@ let g:ctrlp_map = '<c-p>'
 
 if has("gui_win32")
     let g:ctrlp_working_path_mode = 'c'
-    let g:ctrlp_cmd = 'CtrlP C:\Users\john\Dropbox\Documents'
+    " The windows path now has a symbolic link to dropbox docs
+    let g:ctrlp_cmd = 'CtrlP C:\Users\john\Documents\Fall2013'
 else 
+    " todo: move to pointing local Documents, and symbolic link to Dropbox
+    " docs
     let g:ctrlp_cmd = 'CtrlP ~/Dropbox/Documents'
     let g:ctrlp_working_path_mode = 'c'
 endif
