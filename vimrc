@@ -58,16 +58,16 @@ set guioptions-=m
 " My LaTeX documents all have tons of trailing whitespace, and I don't care.
 " ... ask airline to not tell me about it.
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_enable_branch = 1
-let g:airline#extensions#branch#enabled = 1
+" let g:airline_enable_branch = 1
+" let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#bufferline#enabled = 1
-let g:airline_section_b = 'your mom.'
+" let g:airline_section_b = '%{airline#extensions#branch#get_head()}'
 
-function Override(...)
-    call a:1.add_section('StatusLine', '%{airline#extensions#branch#get_head()}')
-    return 1
-endfunction
-call airline#add_statusline_func('Override')
+" function Override(...)
+"     call a:1.add_section('StatusLine', '%{airline#extensions#branch#get_head()}')
+"     return 1
+" endfunction
+" call airline#add_statusline_func('Override')
 
 " Taken from sensible: "
 set smarttab
@@ -145,7 +145,7 @@ autocmd FileType tex set commentstring=\%\ %s
 
 
 """"""  GUI settings.
-set background=light
+set background=dark
 colorscheme solarized 
 let g:airline_theme='solarized'
 
