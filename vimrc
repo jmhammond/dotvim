@@ -129,7 +129,7 @@ if has("gui_win32")
     let g:ctrlp_working_path_mode = 'c'
     let g:ctrlp_cmd = 'CtrlP C:\Users\john\Dropbox\Documents'
 else 
-    let g:ctrlp_cmd = 'CtrlP ~/Dropbox/Documents'
+    let g:ctrlp_cmd = 'CtrlP ~/Documents/Fall2013'
     let g:ctrlp_working_path_mode = 'c'
 endif
 
