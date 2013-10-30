@@ -57,6 +57,7 @@ let g:Tex_Env_questions = "\\begin{questions}\<CR>\\question[0] <++>\<CR>\\end{q
 let g:Tex_Env_parts = "\\begin{parts}\<CR>\\part <++>\<CR>\\end{parts}<++>"
 let g:Tex_Env_solutionorlines = "\\begin{solutionorlines}[.75in]\<CR><++>\<CR>\\end{solutionorlines}<++>"
 let g:Tex_Env_solution = "\\begin{solution}[1pt]\<CR><++>\<CR>\\end{solution}<++>"
-
+let g:Tex_Env_bmatrix = "\begin{bmatrix}[<++>]\<CR><++>\<CR>\end{bmatrix}"
+let g:Tex_Env_pmatrix = "\begin{pmatrix}[<++>]\<CR><++>\<CR>\end{pmatrix}"
 """" end latex
 
