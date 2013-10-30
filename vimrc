@@ -130,9 +130,7 @@ if has("gui_win32")
     " The windows path now has a symbolic link to dropbox docs
     let g:ctrlp_cmd = 'CtrlP C:\Users\john\Documents\Fall2013'
 else 
-    " todo: move to pointing local Documents, and symbolic link to Dropbox
-    " docs
-    let g:ctrlp_cmd = 'CtrlP ~/Dropbox/Documents'
+    let g:ctrlp_cmd = 'CtrlP ~/Documents/Fall2013'
     let g:ctrlp_working_path_mode = 'c'
 endif
 
