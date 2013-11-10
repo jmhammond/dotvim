@@ -115,7 +115,7 @@ let g:tex_itemize_env = 'itemize\|description\|enumerate\|thebibliography\|parts
 " Double compile tex
 map <F10> <leader>ll <leader>ll 
 
-set wildignore+=*.o,*.obj,.git,*.pdf,*.dvi,*.aux,*.gz
+set wildignore+=*.o,*.obj,.git,*.pdf,*.dvi,*.aux,*.gz,*.log
 let g:ctrlp_clear_cache_on_exit = 0
 
 """""" end testing options
