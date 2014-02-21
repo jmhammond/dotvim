@@ -25,7 +25,7 @@ setlocal tabstop=4
 let g:Tex_DefaultTargetFormat='pdf'
 
 if has("gui_win32")
-	let g:Tex_ViewRule_pdf = 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe'
+	let g:Tex_ViewRule_pdf = 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe -inverse-search "gvim -c \":RemoteOpen +\%l \%f\""'
 else 
 	let g:Tex_ViewRule_pdf = 'evince'
 endif
