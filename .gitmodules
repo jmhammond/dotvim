@@ -48,3 +48,9 @@
 [submodule "bundle/vim-sneak"]
 	path = bundle/vim-sneak
 	url = git://github.com/justinmk/vim-sneak.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = git://github.com/tomtom/tlib_vim.git
+[submodule "bundle/viki_vim"]
+	path = bundle/viki_vim
+	url = git://github.com/tomtom/viki_vim.git
